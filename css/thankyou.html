@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – LogicLine Technical Services</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="img/logo.png" class="nav-logo" alt="LogicLine Logo">
+      <span class="nav-title">LogicLine Technical Services</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="payment.html">Payment</a>
+      <a href="book.html">Book Visit</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="payment.html">Payment</a>
+    <a href="book.html">Book Visit</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- CONFIRMATION SECTION -->
+  <section class="page-section">
+    <h2 class="section-title">Thank You!</h2>
+
+    <div class="contact-box">
+      <p>Your booking request has been received.</p>
+      <p>We will contact you shortly to confirm your appointment and gather any additional details if needed.</p>
+      <p>Thank you for choosing LogicLine Technical Services — we look forward to helping you.</p>
+
+      <a class="btn" href="index.html">Return to Home</a>
+      <a class="btn" href="services.html">View Services</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>LogicLine Technical Services</p>
+    <p>Serving small shops, local businesses, and seniors who need trustworthy technical help.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>

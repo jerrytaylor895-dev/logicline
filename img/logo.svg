@@ -1,0 +1,55 @@
+<svg width="400" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="400" height="140" fill="none"/>
+
+  <!-- 12-TOOTH ROUNDED GEAR -->
+  <g transform="translate(70,70)">
+    <!-- Outer gear ring -->
+    <circle r="40" fill="#2B2B2B" stroke="#3A5F7D" stroke-width="6"/>
+
+    <!-- Rounded teeth (12 teeth at 30° increments) -->
+    <g fill="#3A5F7D">
+      <circle cx="0" cy="-52" r="6"/>
+      <circle cx="26" cy="-45" r="6"/>
+      <circle cx="45" cy="-26" r="6"/>
+      <circle cx="52" cy="0" r="6"/>
+      <circle cx="45" cy="26" r="6"/>
+      <circle cx="26" cy="45" r="6"/>
+      <circle cx="0" cy="52" r="6"/>
+      <circle cx="-26" cy="45" r="6"/>
+      <circle cx="-45" cy="26" r="6"/>
+      <circle cx="-52" cy="0" r="6"/>
+      <circle cx="-45" cy="-26" r="6"/>
+      <circle cx="-26" cy="-45" r="6"/>
+    </g>
+
+    <!-- Inner circle -->
+    <circle r="26" fill="#2B2B2B" stroke="#3A5F7D" stroke-width="4"/>
+  </g>
+
+  <!-- HEAVY LOGIC RAILS -->
+  <rect x="20" y="40" width="150" height="10" fill="#FF8C00"/>
+  <rect x="20" y="100" width="150" height="10" fill="#FF8C00"/>
+
+  <!-- LOGIC PULSE WAVEFORM -->
+  <polyline 
+    points="20,70 50,70 65,50 100,50 115,90 150,90 170,70" 
+    fill="none" 
+    stroke="#FFFFFF" 
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- BUSINESS NAME -->
+  <text x="190" y="75" font-family="Arial, sans-serif" font-size="40" fill="#FFFFFF" font-weight="bold">
+    LogicLine
+  </text>
+
+  <!-- SUBTITLE -->
+  <text x="192" y="110" font-family="Arial, sans-serif" font-size="20" fill="#CCCCCC">
+    Technical Services
+  </text>
+
+</svg>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options – LogicLine Technical Services</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="img/logo.png" class="nav-logo" alt="LogicLine Logo">
+      <span class="nav-title">LogicLine Technical Services</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="payment.html">Payment</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="payment.html">Payment</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAYMENT SECTION -->
+  <section class="page-section">
+    <h2 class="section-title">Payment Options</h2>
+
+    <p>Choose the payment method that works best for you. LogicLine offers secure online payments, easy in‑person options, and simple invoicing for seniors and small businesses.</p>
+
+    <div class="payment-grid">
+
+      <div class="payment-card">
+        <h3>Stripe – Pay Now</h3>
+        <p>Fast, secure credit/debit card payments.</p>
+        <a class="btn" href="YOUR_STRIPE_CHECKOUT_LINK">Pay with Stripe</a>
+      </div>
+
+      <div class="payment-card">
+        <h3>PayPal – Pay Now</h3>
+        <p>Use your PayPal balance, bank, or card.</p>
+        <a class="btn" href="YOUR_PAYPAL_BUTTON_LINK">Pay with PayPal</a>
+      </div>
+
+      <div class="payment-card">
+        <h3>Square Invoice</h3>
+        <p>Prefer to pay after service? Request a Square invoice.</p>
+        <a class="btn" href="contact.html">Request Invoice</a>
+      </div>
+
+    </div>
+
+    <h2 class="section-title" style="margin-top:50px;">Rates & Discounts</h2>
+
+    <div class="payment-grid">
+
+      <div class="payment-card">
+        <h3>Standard Hourly Rate</h3>
+        <p class="price">$75 / hour</p>
+        <p>On‑site technical support, PLC troubleshooting, device setup, networking, diagnostics.</p>
+      </div>
+
+      <div class="payment-card">
+        <h3>Remote Support</h3>
+        <p class="price">$25 / session</p>
+        <p>Fast remote help for software issues, device configuration, and troubleshooting.</p>
+      </div>
+
+      <div class="payment-card">
+        <h3>Senior Discount</h3>
+        <p class="price">$60 / hour</p>
+        <p>Reduced rate for clients 65 and older.</p>
+      </div>
+
+      <div class="payment-card">
+        <h3>Senior + Military Double Discount</h3>
+        <p class="price">$50 / hour</p>
+        <p>Extra savings for seniors who also qualify for military discount.</p>
+      </div>
+
+      <div class="payment-card">
+        <h3>Senior + First Responder Double Discount</h3>
+        <p class="price">$50 / hour</p>
+        <p>Extra savings for seniors who also serve as first responders.</p>
+      </div>
+
+    </div>
+
+    <p class="subline">All payments are secure. Discounts applied at time of service. ID may be required.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>LogicLine Technical Services</p>
+    <p>Serving small shops, local businesses, and seniors who need trustworthy technical help.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>

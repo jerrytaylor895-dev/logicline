@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Visit – LogicLine Technical Services</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="img/logo.png" class="nav-logo" alt="LogicLine Logo">
+      <span class="nav-title">LogicLine Technical Services</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="payment.html">Payment</a>
+      <a href="book.html">Book Visit</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="payment.html">Payment</a>
+    <a href="book.html">Book Visit</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- BOOKING SECTION -->
+  <section class="page-section">
+    <h2 class="section-title">Book an On‑Site Visit</h2>
+
+    <p>Schedule a friendly, professional on‑site visit for technical help. We serve small shops, local businesses, and seniors who need trustworthy support.</p>
+
+    <div class="contact-box">
+
+  <form action="https://formsubmit.co/logiclinetechnicalservices@gmail.com" method="POST">
+
+  <!-- Redirect to thank-you page -->
+  <input type="hidden" name="_next" value="http://localhost/thankyou.html">
+
+  <!-- Subject line for YOUR main email -->
+  <input type="hidden" name="_subject" value="New On-Site Booking Request">
+
+  <!-- Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Automatic confirmation email to the customer -->
+  <input type="hidden" name="_autoresponse" value="Thank you for booking with LogicLine Technical Services! We have received your request and will contact you shortly to confirm your appointment.">
+
+  <!-- SECOND formatted email to YOU -->
+  <input type="hidden" name="_cc" value="logiclinetechnicalservices@gmail.com">
+  <input type="hidden" name="_template" value="table">
+
+  <p><strong>Your Email</strong></p>
+  <input type="email" name="email" placeholder="you@example.com" required>
+
+  <p><strong>Visit Type</strong></p>
+  <select name="visitType" required>
+    <option value="Small Business Visit">Small Business Visit</option>
+    <option value="PLC / Automation Visit">PLC / Automation Visit</option>
+    <option value="Senior Tech Help Visit">Senior Tech Help Visit</option>
+    <option value="General Tech Support">General Tech Support</option>
+  </select>
+
+  <p><strong>Preferred Date</strong></p>
+  <input type="date" name="date" required>
+
+  <p><strong>Preferred Time</strong></p>
+  <input type="time" name="time" required>
+
+  <p><strong>Your Address</strong></p>
+  <input type="text" name="address" placeholder="Street, City, ZIP" required>
+
+  <p><strong>Describe the Issue</strong></p>
+  <textarea name="issue" rows="4" placeholder="Tell us what you need help with..." required></textarea>
+
+  <p>
+    <label>
+      <input type="checkbox" name="seniorDiscount">
+      I qualify for the senior discount (65+)
+    </label>
+  </p>
+
+  <p><strong>Preferred Payment Method</strong></p>
+  <select name="paymentMethod">
+    <option value="Pay at Visit">Pay at Visit</option>
+    <option value="Stripe Online Payment">Stripe Online Payment</option>
+    <option value="PayPal Online Payment">PayPal Online Payment</option>
+    <option value="Square Invoice">Square Invoice</option>
+  </select>
+
+  <button class="btn" type="submit">Submit Booking Request</button>
+
+</form>
+
+
+
+    </div>
+
+    <p class="subline">We will contact you shortly to confirm your appointment.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>LogicLine Technical Services</p>
+    <p>Serving small shops, local businesses, and seniors who need trustworthy technical help.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>
