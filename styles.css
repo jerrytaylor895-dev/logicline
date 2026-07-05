@@ -1,0 +1,474 @@
+/* GLOBAL PURE BLACK THEME */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #000000;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo {
+  height: 48px;
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e6e6e6;
+}
+
+.nav-links a {
+  color: #ccc;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #4da6ff;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #000000;
+  padding: 20px;
+  border-bottom: 1px solid #222;
+}
+
+.mobile-menu a {
+  color: #ccc;
+  padding: 12px 0;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.mobile-menu a:hover {
+  color: #4da6ff;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#hero {
+  position: relative;
+  background: url('../img/hero.jpg') center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+
+  opacity: 0;
+  animation: heroFadeIn 1.2s ease-out forwards;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* 55% dark overlay */
+  z-index: 1;
+}
+#hero * {
+  position: relative;
+  z-index: 2;
+}
+
+
+#hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #bbb;
+  font-size: 1.1rem;
+}
+
+/* BUTTONS */
+.buttons {
+  margin: 35px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  margin: 10px;
+  background: #0078ff;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #3399ff;
+  transform: translateY(-2px);
+}
+
+.subline {
+  margin-top: 20px;
+  color: #888;
+}
+
+/* PAGE SECTIONS */
+.page-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e6e6e6;
+}
+
+/* WHY CHOOSE US */
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.why-card h3 {
+  color: #4da6ff;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  color: #ccc;
+}
+
+/* TESTIMONIALS */
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  font-size: 0.9rem;
+  color: #4da6ff;
+  text-align: right;
+}
+
+/* SERVICE GRID */
+.service-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #4da6ff;
+  font-size: 1.3rem;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-card li {
+  margin: 10px 0;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* DISCOUNTS */
+.discount-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.discount-card {
+  background: #0a0a0a;
+  padding: 22px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.discount-card h3 {
+  margin-bottom: 10px;
+  color: #4da6ff;
+  font-size: 1.2rem;
+}
+
+.discount-card p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.98rem;
+}
+
+/* PRICING */
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.pricing-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.pricing-card h3 {
+  margin-bottom: 12px;
+  color: #4da6ff;
+  font-size: 1.3rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e6e6e6;
+  margin-bottom: 12px;
+}
+
+.pricing-card p {
+  color: #ccc;
+  margin: 8px 0;
+}
+
+/* WHAT WE FIX */
+.fix-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.fix-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.fix-card h3 {
+  color: #4da6ff;
+  margin-bottom: 10px;
+}
+
+.fix-card p {
+  color: #ccc;
+}
+
+/* COMPARISON */
+.compare-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.compare-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.compare-card h3 {
+  color: #4da6ff;
+  margin-bottom: 15px;
+}
+
+.compare-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.compare-card li {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+/* CONTACT BOX */
+.contact-box {
+  background: #0a0a0a;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.contact-box p {
+  margin: 12px 0;
+  color: #ccc;
+  font-size: 1.05rem;
+}
+
+/* FOOTER */
+footer {
+  background: #000000;
+  padding: 25px;
+  text-align: center;
+  color: #777;
+  margin-top: 60px;
+  border-top: 1px solid #222;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .service-card,
+  .pricing-card,
+  .discount-card,
+  .testimonial-card,
+  .why-card,
+  .fix-card,
+  .compare-card {
+    width: 90%;
+  }
+}
+.payment-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.payment-card {
+  background: #0a0a0a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.payment-card h3 {
+  margin-bottom: 12px;
+  color: #4da6ff;
+  font-size: 1.3rem;
+}
+
+.payment-card p {
+  color: #ccc;
+  margin: 8px 0;
+}
+
+.payment-card .price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e6e6e6;
+  margin-bottom: 12px;
+}
+.contact-box select,
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #111;
+  color: #e6e6e6;
+  font-size: 1rem;
+}
